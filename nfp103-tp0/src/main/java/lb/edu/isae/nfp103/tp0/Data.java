@@ -12,11 +12,11 @@ public class Data {
 
     private int x = 0;
 
-    public void inc() {
+    public synchronized void inc() {
         x = x + 1;
     }
 
-    public void dec() {
+    public synchronized void dec() {
         x = x - 1;
     }
     
